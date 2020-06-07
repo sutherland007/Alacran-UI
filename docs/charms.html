@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Alacrán UI, a sleek, intuitive, and powerful framework for faster and easier web development">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, alacran, front-end, frontend, web development">
+    <meta name="author" content="AJ Spektor and Alacrán UI contributors">
+
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.png' />
+    <title>Charms | Alacrán UI</title>
+
+    <link href="css/alacran.css" rel="stylesheet">
+    <link href="css/alacran-icons.css" rel="stylesheet">
+    <link href="css/alacran-responsive.css" rel="stylesheet">
+    <link href="css/alacran-schemes.css" rel="stylesheet">
+
+    <link href="css/docs.css" rel="stylesheet">
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <!--<script src="js/jquery-3.1.0.min.js"></script>-->
+    <script src="js/alacran.js"></script>
+    <script src="js/docs.js"></script>
+    <script src="js/prettify/run_prettify.js"></script>
+</head>
+<body>
+    <div class="container page-content">
+        <h1><a href="index.html" class="nav-button transform"><span></span></a>&nbsp;Charms</h1>
+
+        <!-- Regular charms -->
+        <div data-role="charm" data-position="top" id="top-charm"><h1 class="text-light">Top charm</h1></div>
+        <div data-role="charm" data-position="bottom" id="bottom-charm"><h1 class="text-light">Bottom charm</h1></div>
+        <div data-role="charm" data-position="left" id="left-charm"><h1 class="text-light">Left charm</h1></div>
+        <div data-role="charm" data-position="right" id="right-charm"><h1 class="text-light">Right charm</h1></div>
+        <div data-role="charm" id="free-position-charm"><div class="text-light" style="padding: 20px;">Charm with free position</div></div>
+
+        <!-- Themed charms -->
+        <div data-role="charm" data-position="left" id="def-left-charm" ><h1 class="text-light">Default theme</h1></div>
+        <div data-role="charm" data-position="left" id="al-left-charm" class="alacran"><h1 class="text-light">Alacrán theme</h1></div>
+        <div data-role="charm" data-position="left" id="zr-left-charm" class="zero"><h1 class="text-light">Zero theme</h1></div>
+        <div data-role="charm" data-position="left" id="az-left-charm" class="azteca"><h1 class="text-light">Azteca theme</h1></div>
+        <div data-role="charm" data-position="left" id="zn-left-charm" class="zeon"><h1 class="text-light">Zeón charm</h1></div>
+        <div data-role="charm" data-position="left" id="nn-left-charm" class="neon"><h1 class="text-light">Neón charm</h1></div>
+        <div data-role="charm" data-position="left" id="pk-left-charm" class="pinky"><h1 class="text-light">Pinky charm</h1></div>
+
+        <!-- Regular example -->
+        <div class="example" data-text="example">
+            <div class="padding20 align-center">
+                <button class="button" onclick="toggleMetroCharm('#left-charm')">Left side</button>
+                <button class="button" onclick="toggleMetroCharm('#right-charm')">Right side</button>
+                <button class="button" onclick="toggleMetroCharm('#top-charm')">Top side</button>
+                <button class="button" onclick="toggleMetroCharm('#bottom-charm')">Bottom side</button>
+            </div>
+
+            <div class="padding20 align-center">
+                <button class="button" onclick="showMetroCharm('#free-position-charm', 'left')">Left side</button>
+                <button class="button" onclick="showMetroCharm('#free-position-charm', 'right')">Right side</button>
+                <button class="button" onclick="showMetroCharm('#free-position-charm', 'top')">Top side</button>
+                <button class="button" onclick="showMetroCharm('#free-position-charm', 'bottom')">Bottom side</button>
+            </div>
+        </div>
+
+
+        <!-- Themes -->
+        <div class="example" data-text="Themes">
+            <div class="padding20 align-center">
+                <button class="button" onclick="toggleMetroCharm('#def-left-charm')">Default theme</button>
+                <button class="button" onclick="toggleMetroCharm('#al-left-charm')">Alacrán theme</button>
+                <button class="button" onclick="toggleMetroCharm('#zr-left-charm')">Zero theme</button>
+                <button class="button" onclick="toggleMetroCharm('#az-left-charm')">Azteca theme</button>
+                <button class="button" onclick="toggleMetroCharm('#zn-left-charm')">Zeón theme</button>
+                <button class="button" onclick="toggleMetroCharm('#nn-left-charm')">Neón theme</button>
+                <button class="button" onclick="toggleMetroCharm('#pk-left-charm')">Pinky theme</button>
+            </div>
+        </div>
+
+        <div class="example" data-text="code">
+            <h5>Definition</h5>
+            <pre class="prettyprint linenums no-scroll"><code>
+                &lt;div data-role="charm"&gt;
+                    ...charm content...
+                &lt;/div&gt;
+            </code></pre>
+
+            <h5>Themes (Beta)</h5>
+            <pre class="prettyprint linenums no-scroll"><code>
+                &lt;div class="alacran | zero | pure | zeon | neon | pinky"&gt;
+                    ...charm content...
+                &lt;/div&gt;
+            </code></pre>
+
+            <h5>Position</h5>
+            <pre class="prettyprint linenums no-scroll"><code>
+                &lt;div data-role="charm" data-position="left|right|top|bottom"&gt;
+                    ...charm content...
+                &lt;/div&gt;
+            </code></pre>
+
+            <h5>Execute</h5>
+            <pre class="prettyprint linenums no-scroll"><code>
+                toggleMetroCharm(el[, position]);
+                showMetroCharm(el[, position]);
+                hideMetroCharm(el);
+            </code></pre>
+        </div>
+
+    </div>
+</body>
+</html>

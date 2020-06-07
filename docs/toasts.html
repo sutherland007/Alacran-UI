@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Alacrán UI, a sleek, intuitive, and powerful framework for faster and easier web development">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, alacran, front-end, frontend, web development">
+    <meta name="author" content="AJ Spektor and Alacrán UI contributors">
+
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.png' />
+    <title>Toasts | Alacrán UI</title>
+
+    <link href="css/alacran.css" rel="stylesheet">
+    <link href="css/alacran-icons.css" rel="stylesheet">
+    <link href="css/alacran-responsive.css" rel="stylesheet">
+    <link href="css/alacran-schemes.css" rel="stylesheet">
+    <link href="css/alacran-colors.css" rel="stylesheet">
+
+    <link href="css/docs.css" rel="stylesheet">
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <!--<script src="js/jquery-3.1.0.min.js"></script>-->
+    <script src="js/alacran.js"></script>
+    <script src="js/docs.js"></script>
+    <script src="js/prettify/run_prettify.js"></script>
+
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+        if(window.Notification && Notification.permission !== "denied") {
+            $("#notix").click(function(){
+                var content = $("#msg").val();
+                var title = $("#tlt").val();
+                Notification.requestPermission(function(status) {  // status is "granted", if accepted by user
+                    var n = new Notification(title, { 
+                        body: content,
+                        icon: '/images/alr-css-logo.png' // optional
+                    }); 
+                });
+            });
+        }
+        else
+        {
+            Notification.requestPermission();
+        }
+    });
+    </script>
+
+</head>
+<body>
+    <div class="container page-content">
+        <h1 style="margin-top: 80px;">Push notifications</h1>
+        <button class="button" id="notix">Fire</button>
+        <br>
+        <br>
+        <label>Enter a title</label>
+        <div class="input-control text full-size">
+            <input id="tlt" type="text">
+        </div>
+        <br>
+        <label>Enter a message</label>
+        <div class="input-control text full-size">
+            <input id="msg" type="text">
+        </div>
+    </div>
+</body>

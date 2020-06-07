@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Alacrán UI, a sleek, intuitive, and powerful framework for faster and easier web development">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, alacran, front-end, frontend, web development">
+    <meta name="author" content="AJ Spektor and Alacrán UI contributors">
+
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.png' />
+    <title>Video Player | Alacrán UI</title>
+
+    <link href="css/alacran.css" rel="stylesheet">
+    <link href="css/alacran-icons.css" rel="stylesheet">
+    <link href="css/alacran-responsive.css" rel="stylesheet">
+    <link href="css/alacran-schemes.css" rel="stylesheet">
+
+    <link href="css/docs.css" rel="stylesheet">
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <!--<script src="js/jquery-3.1.0.min.js"></script>-->
+    <script src="js/alacran.js"></script>
+    <script src="js/docs.js"></script>
+    <script src="js/prettify/run_prettify.js"></script>
+
+</head>
+<body>
+    <div class="container page-content">
+        <h1><a href="index.html" class="nav-button transform"><span></span></a>&nbsp;Video player</h1>
+
+        @@adsense
+
+        <div class="example" data-text="example">
+
+            <div class="grid">
+                <div class="row">
+                    <div class="cell">
+                        <div data-role="video" data-full-screen-mode="window" data-logo="./images/wn8.png"  data-preload="true" >
+                            <video>
+                                <source src="http://metroui.org.ua/res/oceans.mp4" type='video/mp4' />
+                                <source src="http://metroui.org.ua/res/oceans.webm" type='video/webm' />
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cells2">
+                    <div class="cell">
+                        <h5>Full screen mode window</h5>
+                        <div data-role="video" data-full-screen-mode="window">
+                            <video>
+                                <source src="http://metroui.org.ua/res/oceans.mp4" type='video/mp4' />
+                                <source src="http://metroui.org.ua/res/oceans.webm" type='video/webm' />
+                            </video>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <h5>Full screen mode screen</h5>
+                        <div data-role="video" data-full-screen-mode="default">
+                            <video>
+                                <source src="http://metroui.org.ua/res/oceans.mp4" type='video/mp4' />
+                                <source src="http://metroui.org.ua/res/oceans.webm" type='video/webm' />
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="example" data-text="code">
+            <pre class="prettyprint linenums"><code>
+                &lt;div data-role="video"&gt;
+                    &lt;video&gt;
+                        &lt;source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' /&gt;
+                        &lt;source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm' /&gt;
+                    &lt;/video&gt;
+                &lt;/div&gt;
+            </code></pre>
+        </div>
+
+    </div>
+</body>
+</html>

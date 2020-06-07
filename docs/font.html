@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Alacrán UI, a sleek, intuitive, and powerful framework for faster and easier web development">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, alacran, front-end, frontend, web development">
+    <meta name="author" content="AJ Spektor and Alacrán UI contributors">
+
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.png' />
+    <title>Icon Font | Alacrán UI</title>
+
+    <link href="css/alacran.css" rel="stylesheet">
+    <link href="css/alacran-icons.css" rel="stylesheet">
+    <link href="css/alacran-responsive.css" rel="stylesheet">
+    <link href="css/alacran-schemes.css" rel="stylesheet">
+
+    <link href="css/docs.css" rel="stylesheet">
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <!--<script src="js/jquery-3.1.0.min.js"></script>-->
+    <script src="js/alacran.js"></script>
+    <script src="js/docs.js"></script>
+    <script src="js/prettify/run_prettify.js"></script>
+
+
+    <style>
+        .icon-listing li {
+            width: 23%;
+            padding: .625rem;
+            cursor: pointer;
+            vertical-align: baseline;
+            font-size: .9em;
+        }
+        .icon-listing li:hover {
+            background-color: #64b4db;
+            color: #fff;
+        }
+        .icon-listing li [class*=icn-] {
+            font-size: 1.25rem;
+            margin-right: 10px;
+            color: #999;
+        }
+        .icon-listing li:hover [class*=icn-] {
+            color: #fff;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container page-content">
+        <h1><a href="index.html" class="nav-button transform"><span></span></a>&nbsp;Icon Font</h1>
+
+        <div class="margin20 no-margin-left no-margin-right sub-header text-light">
+            Alacrán Icon Font gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS. Alacrán Icon Font includes over 400 icons.
+        </div>
+
+        <h4>How to use</h4>
+        <div class="example" data-text="code">
+
+            <h5>Include in page head:</h5>
+            <pre class="prettyprint linenums"><code>
+                &lt;link href="alacran-icons.css" rel="stylesheet"&gt;
+            </code></pre>
+
+            <h5>In html use:</h5>
+            <pre class="prettyprint linenums"><code>
+                &lt;span class="icn-icon_name"&gt;&lt;/span&gt;
+            </code></pre>
+        </div>
+
+        <p>
+            To change size icon you can use next classes: <span class="tag">icon-lg</span>, <span class="tag">icon-2x</span>, <span class="tag">icon-3x</span>, <span class="tag">icon-4x</span>.
+        </p>
+
+        <div class="example" data-text="size">
+            Icons can be resized to any
+            <span class="icn-alacran"></span>
+            <span class="icn-alacran icn-lg"></span>
+            <span class="icn-alacran icn-2x"></span>
+            <span class="icn-alacran icn-3x"></span>
+            <span class="icn-alacran icn-4x"></span>
+            sizes over built-in classes
+        </div>
+        <div class="example" data-text="code">
+            <pre class="prettyprint linenums"><code>
+                &lt;span class="icn-alacran icon-2x"&gt;&lt;/span&gt;
+            </code></pre>
+        </div>
+
+        <p>
+            To change icon color you can use <span class="tag">fg-*</span> classes or use css property <span class="tag">color</span>.
+        </p>
+
+        <div class="example" data-text="size">
+            <span class="icn-alacran fg-cyan"></span>
+            <span class="icn-alacran icn-lg fg-pink"></span>
+            <span class="icn-alacran icn-2x fg-green"></span>
+            <span class="icn-alacran icn-3x fg-red"></span>
+            <span class="icn-alacran icn-4x" style="color: blue"></span>
+        </div>
+        <div class="example" data-text="code">
+            <pre class="prettyprint linenums"><code>
+                &lt;span class="icn-alacran fg-green"&gt;&lt;/span&gt;
+                &lt;span class="icn-alacran" style="color: red;"&gt;&lt;/span&gt;
+            </code></pre>
+        </div>
+
+        <h2 class="text-light pos-rel">Icons <span class="small dropdown-toggle">goto</span>
+            <ul class="d-menu context" data-role="dropdown">
+                <li><a href="#_application_">Application icons</a></li>
+                <li><a href="#_mobile_">Mobile icons</a></li>
+                <li><a href="#_device_">Device icons</a></li>
+                <li><a href="#_player_">Player icons</a></li>
+                <li><a href="#_brand_">Brand icons</a></li>
+                <li><a href="#_weather_">Weather icons</a></li>
+                <li><a href="#_chart_">Chart icons</a></li>
+                <li><a href="#_spinner_">Spinner icons</a></li>
+            </ul>
+        </h2>
+
+        <p>
+            Below is an exhaustive list of icons that are included in Alacrán Icon Font.
+        </p>
+
+        <h4 id="_new_">New icons</h4>
+        <div class="example">
+            <ul class="inline-list icon-listing">
+                <li><span class="icn-eur"></span> eur</li>
+                <li><span class="icn-gbp"></span> gbp</li>
+                <li><span class="icn-dollar2"></span> dollar2</li>
+                <li><span class="icn-inr"></span> inr</li>
+                <li><span class="icn-cny"></span> cny</li>
+                <li><span class="icn-rouble"></span> rouble</li>
+                <li><span class="icn-krw"></span> krw</li>
+                <li><span class="icn-try"></span> try</li>
+                <li><span class="icn-bitcoin"></span> bitcoin</li>
+
+                <li><span class="icn-linux"></span> linux</li>
+                <li><span class="icn-jsfiddle"></span> jsfiddle</li>
+                <li><span class="icn-openid"></span> openid</li>
+                <li><span class="icn-digg"></span> digg</li>
+                <li><span class="icn-google-wallet"></span> google-wallet</li>
+                <li><span class="icn-opencart"></span> opencart</li>
+                <li><span class="icn-amazon"></span> amazon</li>
+                <li><span class="icn-wikipedia-w"></span> wikipedia</li>
+
+                <li><span class="icn-space-shuttle"></span> space-shuttle</li>
+                <li><span class="icn-automobile"></span> automobile</li>
+                <li><span class="icn-cab"></span> cab</li>
+                <li><span class="icn-bicycle"></span> bicycle</li>
+                <li><span class="icn-bus"></span> bus</li>
+                <li><span class="icn-ship"></span> ship</li>
+                <li><span class="icn-motorcycle"></span> motorcycle</li>
+                <li><span class="icn-train"></span> train</li>
+                <li><span class="icn-subway"></span> subway</li>
+
+                <li><span class="icn-copyright"></span> copyright</li>
+                <li><span class="icn-trademark"></span> trademark</li>
+                <li><span class="icn-registered"></span> registered</li>
+                <li><span class="icn-creative-commons"></span> creative-commons</li>
+
+                <li><span class="icn-fonticons"></span> fonticons</li>
+                <li><span class="icn-earth_2"></span> earth_2</li>
+                <li><span class="icn-shit"></span> shit</li>
+                <li><span class="icn-broadcast"></span> broadcast</li>
+                <li><span class="icn-organization"></span> organization</li>
+                <li><span class="icn-squirrel"></span> squirrel</li>
+                <li><span class="icn-steps"></span> steps</li>
+                <li><span class="icn-versions"></span> versions</li>
+                <li><span class="icn-language"></span> language</li>
+                <li><span class="icn-unlink"></span> unlink</li>
+                <li><span class="icn-fire-extinguisher"></span> fire-extinguisher</li>
+            </ul>
+        </div>
+
+
+        <h4 id="_application_">Application icons</h4>
+        <div class="example">
+            <ul class="inline-list icon-listing">
+                <li><span class="icn-space-shuttle"></span> space-shuttle</li>
+                <li><span class="icn-automobile"></span> automobile</li>
+                <li><span class="icn-cab"></span> cab</li>
+                <li><span class="icn-bicycle"></span> bicycle</li>
+                <li><span class="icn-bus"></span> bus</li>
+                <li><span class="icn-ship"></span> ship</li>
+                <li><span class="icn-motorcycle"></span> motorcycle</li>
+                <li><span class="icn-train"></span> train</li>
+                <li><span class="icn-subway"></span> subway</li>
+                <li><span class="icn-copyright"></span> copyright</li>
+                <li><span class="icn-trademark"></span> trademark</li>
+                <li><span class="icn-registered"></span> registered</li>
+                <li><span class="icn-creative-commons"></span> creative-commons</li>
+                <li><span class="icn-fonticons"></span> fonticons</li>
+                <li><span class="icn-earth_2"></span> earth_2</li>
+                <li><span class="icn-shit"></span> shit</li>
+                <li><span class="icn-broadcast"></span> broadcast</li>
+                <li><span class="icn-organization"></span> organization</li>
+                <li><span class="icn-squirrel"></span> squirrel</li>
+                <li><span class="icn-steps"></span> steps</li>
+                <li><span class="icn-versions"></span> versions</li>
+                <li><span class="icn-language"></span> language</li>
+                <li><span class="icn-unlink"></span> unlink</li>
+                <li><span class="icn-fire-extinguisher"></span> fire-extinguisher</li>
+                <li><span class="icn-eur"></span> eur</li>
+                <li><span class="icn-gbp"></span> gbp</li>
+                <li><span class="icn-dollar2"></span> dollar2</li>
+                <li><span class="icn-inr"></span> inr</li>
+                <li><span class="icn-cny"></span> cny</li>
+                <li><span class="icn-rouble"></span> rouble</li>
+                <li><span class="icn-krw"></span> krw</li>
+                <li><span class="icn-try"></span> try</li>
+                <li><span class="icn-bitcoin"></span> bitcoin</li>
+                <li><span class="icn-microscope"></span> microscope</li>
+                <li><span class="icn-stack"></span> stack</li>
+                <li><span class="icn-stack_2"></span> stack_2</li>
+                <li><span class="icn-lamp"></span> lamp</li>
+                <li><span class="icn-injection"></span> injection</li>
+                <li><span class="icn-thermometer_2"></span> thermometer_2</li>
+                <li><span class="icn-justice"></span> justice</li>
+                <li><span class="icn-user-md"></span> user-md</li>
+                <li><span class="icn-stethoscope"></span> stethoscope</li>
+                <li><span class="icn-ambulance"></span> ambulance</li>
+                <li><span class="icn-medkit"></span> medkit</li>
+                <li><span class="icn-paw"></span> paw</li>
+                <li><span class="icn-file-pdf"></span> file-pdf</li>
+                <li><span class="icn-file-word"></span> file-word</li>
+                <li><span class="icn-file-excel"></span> file-excel</li>
+                <li><span class="icn-file-powerpoint"></span> file-powerpoint</li>
+                <li><span class="icn-file-image"></span> file-image</li>
+                <li><span class="icn-file-archive"></span> file-archive</li>
+                <li><span class="icn-file-audio"></span> file-audio</li>
+                <li><span class="icn-file-movie"></span> file-movie</li>
+                <li><span class="icn-file-code"></span> file-code</li>
+                <li><span class="icn-cc-visa"></span> cc-visa</li>
+                <li><span class="icn-cc-mastercard"></span> cc-mastercard</li>
+                <li><span class="icn-cc-discover"></span> cc-discover</li>
+                <li><span class="icn-cc-amex"></span> cc-amex</li>
+                <li><span class="icn-cc-paypal"></span> cc-paypal</li>
+                <li><span class="icn-heartbeat"></span> heartbeat</li>
+                <li><span class="icn-venus"></span> venus</li>
+                <li><span class="icn-mars"></span> mars</li>
+                <li><span class="icn-medium"></span> medium</li>
+                <li><span class="icn-directions-bike"></span> directions-bike</li>
+                <li><span class="icn-location-city"></span> location-city</li>
+                <li><span class="icn-library"></span> library</li>
+                <li><span class="icn-calculator_2"></span> calculator_2</li>
+                <li><span class="icn-barbell"></span> barbell</li>
+                <li><span class="icn-3d-rotation"></span> 3d-rotation</li>
+                <li><span class="icn-alarm"></span> alarm</li>
+                <li><span class="icn-alarm-on"></span> alarm-on</li>
+                <li><span class="icn-favorite"></span> favorite</li>
+                <li><span class="icn-settings-ethernet"></span> settings-ethernet</li>
+                <li><span class="icn-settings-power"></span> settings-power</li>
+                <li><span class="icn-settings-voice"></span> settings-voice</li>
+                <li><span class="icn-shopping-basket"></span> shopping-basket</li>
+                <li><span class="icn-contacts-dialer"></span> contacts-dialer</li>
+                <li><span class="icn-contacts-mail"></span> contacts-mail</li>
+                <li><span class="icn-drafts"></span> drafts</li>
+                <li><span class="icn-mail"></span> mail</li>
+                <li><span class="icn-brightness-auto"></span> brightness-auto</li>
+                <li><span class="icn-multitrack-audio"></span> multitrack-audio</li>
+                <li><span class="icn-widgets"></span> widgets</li>
+                <li><span class="icn-usb"></span> usb</li>
+                <li><span class="icn-vertical-align-bottom"></span> vertical-align-bottom</li>
+                <li><span class="icn-vertical-align-center"></span> vertical-align-center</li>
+                <li><span class="icn-vertical-align-top"></span> vertical-align-top</li>
+                <li><span class="icn-file-download"></span> file-download</li>
+                <li><span class="icn-file-upload"></span> file-upload</li>
+                <li><span class="icn-keyboard-return"></span> keyboard-return</li>
+                <li><span class="icn-security"></span> security</li>
+                <li><span class="icn-looks"></span> looks</li>
+                <li><span class="icn-palette"></span> palette</li>
+                <li><span class="icn-layers"></span> layers</li>
+                <li><span class="icn-layers-clear"></span> layers-clear</li>
+                <li><span class="icn-local-airport"></span> local-airport</li>
+                <li><span class="icn-florist"></span> florist</li>
+                <li><span class="icn-gas-station"></span> gas-station</li>
+                <li><span class="icn-hotel"></span> hotel</li>
+                <li><span class="icn-laundry-service"></span> laundry-service</li>
+                <li><span class="icn-map_2"></span> map_2</li>
+                <li><span class="icn-traff"></span> traff</li>
+                <li><span class="icn-apps"></span> apps</li>
+                <li><span class="icn-chevron-left"></span> chevron-left</li>
+                <li><span class="icn-chevron-right"></span> chevron-right</li>
+                <li><span class="icn-expand-less"></span> expand-less</li>
+                <li><span class="icn-expand-more"></span> expand-more</li>
+                <li><span class="icn-menu"></span> menu</li>
+                <li><span class="icn-more-horiz"></span> more-horiz</li>
+                <li><span class="icn-more-vert"></span> more-vert</li>
+                <li><span class="icn-unfold-less"></span> unfold-less</li>
+                <li><span class="icn-unfold-more"></span> unfold-more</li>
+                <li><span class="icn-not"></span> not</li>
+                <li><span class="icn-drive-eta"></span> drive-eta</li>
+                <li><span class="icn-event-available"></span> event-available</li>
+                <li><span class="icn-event-busy"></span> event-busy</li>
+                <li><span class="icn-folder-special"></span> folder-special</li>
+                <li><span class="icn-sd-card"></span> folder-sd-card</li>
+                <li><span class="icn-sync-disabled"></span> sync-disabled</li>
+                <li><span class="icn-sync-problem"></span> sync-problem</li>
+                <li><span class="icn-vpn-lock"></span> vpn-lock</li>
+                <li><span class="icn-vpn-publ"></span> vpn-publ</li>
+                <li><span class="icn-school"></span> school</li>
+                <li><span class="icn-file-binary"></span> file-binary</li>
+                <li><span class="icn-mail-read"></span> mail-read</li>
+                <li><span class="icn-quote"></span> quote</li>
+                <li><span class="icn-home"></span> home</li>
+                <li><span class="icn-pencil"></span> pencil</li>
+                <li><span class="icn-eyedropper"></span> eyedropper</li>
+                <li><span class="icn-paint"></span> paint</li>
+                <li><span class="icn-image"></span> image</li>
+                <li><span class="icn-images"></span> images</li>
+                <li><span class="icn-camera"></span> camera</li>
+                <li><span class="icn-headphones"></span> headphones</li>
+                <li><span class="icn-music"></span> music</li>
+                <li><span class="icn-film"></span> film</li>
+                <li><span class="icn-video-camera"></span> video-camera</li>
+                <li><span class="icn-dice"></span> dice</li>
+                <li><span class="icn-books"></span> books</li>
+                <li><span class="icn-file-empty"></span> file-empty</li>
+                <li><span class="icn-files-empty"></span> files-empty</li>
+                <li><span class="icn-file-text"></span> file-text</li>
+                <li><span class="icn-file-picture"></span> file-picture</li>
+                <li><span class="icn-file-music"></span> file-music</li>
+                <li><span class="icn-file-play"></span> file-play</li>
+                <li><span class="icn-file-video"></span> file-video</li>
+                <li><span class="icn-file-zip"></span> file-zip</li>
+                <li><span class="icn-stack"></span> stack</li>
+                <li><span class="icn-folder"></span> folder</li>
+                <li><span class="icn-folder-open"></span> folder-open</li>
+                <li><span class="icn-folder-plus"></span> folder-plus</li>
+                <li><span class="icn-folder-minus"></span> folder-minus</li>
+                <li><span class="icn-folder-download"></span> folder-download</li>
+                <li><span class="icn-folder-upload"></span> folder-upload</li>
+                <li><span class="icn-tag"></span> tag</li>
+                <li><span class="icn-tags"></span> tags</li>
+                <li><span class="icn-barcode"></span> barcode</li>
+                <li><span class="icn-qrcode"></span> qrcode</li>
+                <li><span class="icn-cart"></span> cart</li>
+                <li><span class="icn-credit-card"></span> credit-card</li>
+                <li><span class="icn-calculator"></span> calculator</li>
+                <li><span class="icn-lifebuoy"></span> lifebuoy</li>
+                <li><span class="icn-envelop"></span> envelop</li>
+                <li><span class="icn-location"></span> location</li>
+                <li><span class="icn-compass"></span> compass</li>
+                <li><span class="icn-compass_2"></span> compass_2</li>
+                <li><span class="icn-map"></span> map</li>
+                <li><span class="icn-history"></span> history</li>
+                <li><span class="icn-bell"></span> bell</li>
+                <li><span class="icn-calendar"></span> calendar</li>
+                <li><span class="icn-printer"></span> printer</li>
+                <li><span class="icn-keyboard"></span> keyboard</li>
+                <li><span class="icn-download"></span> download</li>
+                <li><span class="icn-upload"></span> upload</li>
+                <li><span class="icn-floppy-disk"></span> floppy-disk</li>
+                <li><span class="icn-drive"></span> drive</li>
+                <li><span class="icn-database"></span> database</li>
+                <li><span class="icn-undo"></span> undo</li>
+                <li><span class="icn-redo"></span> redo</li>
+                <li><span class="icn-bubble"></span> bubble</li>
+                <li><span class="icn-bubbles"></span> bubbles</li>
+                <li><span class="icn-user"></span> user</li>
+                <li><span class="icn-users"></span> users</li>
+                <li><span class="icn-user-plus"></span> user-plus</li>
+                <li><span class="icn-user-minus"></span> user-minus</li>
+                <li><span class="icn-user-check"></span> user-check</li>
+                <li><span class="icn-hour-glass"></span> hour-glass</li>
+                <li><span class="icn-search"></span> search</li>
+                <li><span class="icn-zoom-in"></span> zoom-in</li>
+                <li><span class="icn-zoom-out"></span> zoom-out</li>
+                <li><span class="icn-enlarge"></span> enlarge</li>
+                <li><span class="icn-shrink"></span> shrink</li>
+                <li><span class="icn-enlarge_2"></span> enlarge_2</li>
+                <li><span class="icn-shrink_2"></span> shrink_2</li>
+                <li><span class="icn-key"></span> key</li>
+                <li><span class="icn-wrench"></span> wrench</li>
+                <li><span class="icn-equalizer"></span> equalizer</li>
+                <li><span class="icn-equalizer-v"></span> equalizer-v</li>
+                <li><span class="icn-cog"></span> cog</li>
+                <li><span class="icn-cogs"></span> cogs</li>
+                <li><span class="icn-magic-wand"></span> magic-wand</li>
+                <li><span class="icn-bug"></span> bug</li>
+                <li><span class="icn-trophy"></span> trophy</li>
+                <li><span class="icn-gift"></span> gift</li>
+                <li><span class="icn-spoon-fork"></span> spoon-fork</li>
+                <li><span class="icn-rocket"></span> rocket</li>
+                <li><span class="icn-meter"></span> meter</li>
+                <li><span class="icn-hammer"></span> hammer</li>
+                <li><span class="icn-fire"></span> fire</li>
+                <li><span class="icn-lab"></span> lab</li>
+                <li><span class="icn-bin"></span> bin</li>
+                <li><span class="icn-truck"></span> truck</li>
+                <li><span class="icn-target"></span> target</li>
+                <li><span class="icn-power"></span> power</li>
+                <li><span class="icn-switch"></span> switch</li>
+                <li><span class="icn-power-cord"></span> power-cord</li>
+                <li><span class="icn-clipboard"></span> clipboard</li>
+                <li><span class="icn-list-numbered"></span> list-numbered</li>
+                <li><span class="icn-list"></span> list</li>
+                <li><span class="icn-list_2"></span> list_2</li>
+                <li><span class="icn-tree"></span> tree</li>
+                <li><span class="icn-cloud"></span> cloud</li>
+                <li><span class="icn-cloud-download"></span> cloud-download</li>
+                <li><span class="icn-cloud-upload"></span> cloud-upload</li>
+                <li><span class="icn-download_2"></span> download_2</li>
+                <li><span class="icn-upload_2"></span> upload_2</li>
+                <li><span class="icn-earth"></span> earth</li>
+                <li><span class="icn-link"></span> link</li>
+                <li><span class="icn-flag"></span> flag</li>
+                <li><span class="icn-attachment"></span> attachment</li>
+                <li><span class="icn-eye"></span> eye</li>
+                <li><span class="icn-bookmark"></span> bookmark</li>
+                <li><span class="icn-bookmarks"></span> bookmarks</li>
+                <li><span class="icn-contrast"></span> contrast</li>
+                <li><span class="icn-brightness-contrast"></span> brightness-contrast</li>
+                <li><span class="icn-star-empty"></span> star-empty</li>
+                <li><span class="icn-star-half"></span> star-half</li>
+                <li><span class="icn-star-half"></span> star-half</li>
+                <li><span class="icn-star-full"></span> star-full</li>
+                <li><span class="icn-heart"></span> heart</li>
+                <li><span class="icn-heart-broken"></span> heart-broken</li>
+                <li><span class="icn-warning"></span> warning</li>
+                <li><span class="icn-notification"></span> notification</li>
+                <li><span class="icn-question"></span> question</li>
+                <li><span class="icn-plus"></span> plus</li>
+                <li><span class="icn-minus"></span> minus</li>
+                <li><span class="icn-info"></span> info</li>
+                <li><span class="icn-cancel-circle"></span> cancel-circle</li>
+                <li><span class="icn-blocked"></span> blocked</li>
+                <li><span class="icn-cross"></span> cross</li>
+                <li><span class="icn-checkmark"></span> checkmark</li>
+                <li><span class="icn-spell-check"></span> spell-check</li>
+                <li><span class="icn-enter"></span> enter</li>
+                <li><span class="icn-exit"></span> exit</li>
+                <li><span class="icn-arrow-up-left"></span> arrow-up-left</li>
+                <li><span class="icn-arrow-up"></span> arrow-up</li>
+                <li><span class="icn-arrow-up-right"></span> arrow-up-right</li>
+                <li><span class="icn-arrow-right"></span> arrow-right</li>
+                <li><span class="icn-arrow-down-right"></span> arrow-down-right</li>
+                <li><span class="icn-arrow-down"></span> arrow-down</li>
+                <li><span class="icn-arrow-down-left"></span> arrow-down-left</li>
+                <li><span class="icn-arrow-left"></span> arrow-left</li>
+                <li><span class="icn-tab"></span> tab</li>
+                <li><span class="icn-move-up"></span> move-up</li>
+                <li><span class="icn-move-down"></span> move-down</li>
+                <li><span class="icn-sort-asc"></span> sort-asc</li>
+                <li><span class="icn-sort-desc"></span> sort-desc</li>
+                <li><span class="icn-command"></span> command</li>
+                <li><span class="icn-shift"></span> shift</li>
+                <li><span class="icn-crop"></span> crop</li>
+                <li><span class="icn-filter"></span> filter</li>
+                <li><span class="icn-bold"></span> bold</li>
+                <li><span class="icn-underline"></span> underline</li>
+                <li><span class="icn-italic"></span> italic</li>
+                <li><span class="icn-strikethrough"></span> strikethrough</li>
+                <li><span class="icn-page-break"></span> page-break</li>
+                <li><span class="icn-superscript"></span> superscript</li>
+                <li><span class="icn-subscript"></span> subscript</li>
+                <li><span class="icn-table"></span> table</li>
+                <li><span class="icn-insert-template"></span> insert-template</li>
+                <li><span class="icn-pilcrow"></span> pilcrow</li>
+                <li><span class="icn-ltr"></span> ltr</li>
+                <li><span class="icn-rtl"></span> rtl</li>
+                <li><span class="icn-section"></span> section</li>
+                <li><span class="icn-paragraph-left"></span> paragraph-left</li>
+                <li><span class="icn-paragraph-center"></span> paragraph-center</li>
+                <li><span class="icn-paragraph-right"></span> paragraph-right</li>
+                <li><span class="icn-paragraph-justify"></span> paragraph-justify</li>
+                <li><span class="icn-indent-increase"></span> indent-increase</li>
+                <li><span class="icn-indent-decrease"></span> indent-decrease</li>
+                <li><span class="icn-embed"></span> embed</li>
+                <li><span class="icn-embed_2"></span> embed_2</li>
+                <li><span class="icn-share"></span> share</li>
+                <li><span class="icn-feed_2"></span> feed_2</li>
+                <li><span class="icn-chevron-thin-down"></span> chevron-thin-down</li>
+                <li><span class="icn-chevron-thin-left"></span> chevron-thin-left</li>
+                <li><span class="icn-chevron-thin-right"></span> chevron-thin-right</li>
+                <li><span class="icn-chevron-thin-up"></span> chevron-thin-up</li>
+                <li><span class="icn-flow-branch"></span> flow-branch</li>
+                <li><span class="icn-flow-cascade"></span> flow-cascade</li>
+                <li><span class="icn-flow-line"></span> flow-line</li>
+                <li><span class="icn-flow-parallel"></span> flow-parallel</li>
+                <li><span class="icn-flow-tree"></span> flow-tree</li>
+                <li><span class="icn-air"></span> air</li>
+                <li><span class="icn-medal"></span> medal</li>
+                <li><span class="icn-paper-plane"></span> paper-plane</li>
+                <li><span class="icn-shareable"></span> shareable</li>
+                <li><span class="icn-shop"></span> shop</li>
+                <li><span class="icn-shopping-basket2"></span> shopping-basket2</li>
+                <li><span class="icn-thumbs-down"></span> thumbs-down</li>
+                <li><span class="icn-thumbs-up"></span> thumbs-up</li>
+                <li><span class="icn-traffic-cone"></span> traffic-cone</li>
+                <li><span class="icn-water"></span> water</li>
+                <li><span class="icn-cabinet"></span> cabinet</li>
+                <li><span class="icn-suitcase"></span> suitcase</li>
+                <li><span class="icn-gamepad"></span> gamepad</li>
+                <li><span class="icn-lock"></span> lock</li>
+                <li><span class="icn-unlock"></span> unlock</li>
+                <li><span class="icn-tools"></span> tools</li>
+                <li><span class="icn-pin"></span> pin</li>
+                <li><span class="icn-discout"></span> discout</li>
+                <li><span class="icn-profile"></span> profile</li>
+                <li><span class="icn-money"></span> money</li>
+                <li><span class="icn-dollars"></span> dollars</li>
+                <li><span class="icn-coins"></span> coins</li>
+                <li><span class="icn-male"></span> male</li>
+                <li><span class="icn-female"></span> female</li>
+                <li><span class="icn-piano"></span> piano</li>
+                <li><span class="icn-anchor"></span> anchor</li>
+            </ul>
+        </div>
+
+        <h4 id="_mobile_">Mobile icons</h4>
+        <div class="example">
+            <ul class="inline-list icon-listing">
+                <li><span class="icn-wifi-low"></span> wifi-low</li>
+                <li><span class="icn-wifi-mid"></span> wifi-mid</li>
+                <li><span class="icn-wifi-full"></span> wifi-full</li>
+                <li><span class="icn-perm-phone-msg"></span> perm-phone-msg</li>
+                <li><span class="icn-bt-settings"></span> bt-settings</li>
+                <li><span class="icn-settings-phone"></span> settings-phone</li>
+                <li><span class="icn-dialer-sip"></span> dialer-sip</li>
+                <li><span class="icn-dialpad"></span> dialpad</li>
+                <li><span class="icn-ring-volume"></span> ring-volume</li>
+                <li><span class="icn-voicemail"></span> voicemail</li>
+                <li><span class="icn-bluetooth"></span> bluetooth</li>
+                <li><span class="icn-bt-connected"></span> bt-connected</li>
+                <li><span class="icn-bt-disabled"></span> bt-disabled</li>
+                <li><span class="icn-bt-searching"></span> bt-searching</li>
+                <li><span class="icn-phonelink"></span> phonelink</li>
+                <li><span class="icn-phonelink-off"></span> phonelink-off</li>
+                <li><span class="icn-my-location"></span> my-location</li>
+                <li><span class="icn-bt-audio"></span> bt-audio</li>
+                <li><span class="icn-phone-bt"></span> bt-phone</li>
+                <li><span class="icn-phone-forwarded"></span> phone-forwarded</li>
+                <li><span class="icn-phone-in-talk"></span> phone-in-talk</li>
+                <li><span class="icn-phone-locked"></span> phone-locked</li>
+                <li><span class="icn-phone-missed"></span> phone-missed</li>
+                <li><span class="icn-phone-paused"></span> phone-paused</li>
+                <li><span class="icn-headphones"></span> headphones</li>
+                <li><span class="icn-wifi-connect"></span> wifi-connect</li>
+                <li><span class="icn-feed"></span> feed</li>
+                <li><span class="icn-mic"></span> mic</li>
+                <li><span class="icn-phone"></span> phone</li>
+                <li><span class="icn-satellite"></span> satellite</li>
+                <li><span class="icn-battery_full"></span> battery-full</li>
+                <li><span class="icn-battery_2"></span> battery_2</li>
+                <li><span class="icn-battery_1"></span> battery_1</li>
+                <li><span class="icn-battery_empty"></span> battery_empty</li>
+                <li><span class="icn-battery_charge"></span> battery_charge</li>
+            </ul>
+        </div>
+
+        <h4 id="_device_">Device icons</h4>
+        <div class="example">
+            <ul class="inline-list icon-listing">
+                <li><span class="icn-display"></span> display</li>
+                <li><span class="icn-laptop"></span> laptop</li>
+                <li><span class="icn-mobile"></span> mobile</li>
+                <li><span class="icn-tablet"></span> tablet</li>
+                <li><span class="icn-tablet-landscape"></span> tablet-landscape</li>
+            </ul>
+        </div>
+
+        <h4 id="_player_">Player icons</h4>
+        <div class="example">
+            <ul class="inline-list icon-listing">
+                <li><span class="icn-play"></span> play</li>
+                <li><span class="icn-pause"></span> pause</li>
+                <li><span class="icn-stop"></span> stop</li>
+                <li><span class="icn-backward"></span> backward</li>
+                <li><span class="icn-forward"></span> forward</li>
+                <li><span class="icn-first"></span> first</li>
+                <li><span class="icn-last"></span> last</li>
+                <li><span class="icn-previous"></span> previous</li>
+                <li><span class="icn-next"></span> next</li>
+                <li><span class="icn-eject"></span> eject</li>
+                <li><span class="icn-volume-high"></span> volume-high</li>
+                <li><span class="icn-volume-medium"></span> volume-medium</li>
+                <li><span class="icn-volume-low"></span> volume-low</li>
+                <li><span class="icn-volume-mute"></span> volume-mute</li>
+                <li><span class="icn-volume-mute_2"></span> volume-mute_2</li>
+                <li><span class="icn-volume-plus"></span> volume-plus</li>
+                <li><span class="icn-volume-minus"></span> volume-minus</li>
+                <li><span class="icn-loop"></span> loop</li>
+                <li><span class="icn-loop_2"></span> loop_2</li>
+                <li><span class="icn-infinite"></span> infinite</li>
+                <li><span class="icn-shuffle"></span> shuffle</li>
+            </ul>
+        </div>
+
+        <h4 id="_brand_">Brand icons</h4>
+        <div class="example">
+            <ul class="inline-list icon-listing">
+                <li><span class="icn-linux"></span> linux</li>
+                <li><span class="icn-jsfiddle"></span> jsfiddle</li>
+                <li><span class="icn-openid"></span> openid</li>
+                <li><span class="icn-digg"></span> digg</li>
+                <li><span class="icn-google-wallet"></span> google-wallet</li>
+                <li><span class="icn-opencart"></span> opencart</li>
+                <li><span class="icn-amazon"></span> amazon</li>
+                <li><span class="icn-wikipedia"></span> wikipedia</li>
+                <li><span class="icn-google"></span> google</li>
+                <li><span class="icn-facebook"></span> facebook</li>
+                <li><span class="icn-twitter"></span> twitter</li>
+                <li><span class="icn-youtube"></span> youtube</li>
+                <li><span class="icn-steam"></span> steam</li>
+                <li><span class="icn-onedrive"></span> onedrive</li>
+                <li><span class="icn-github"></span> github</li>
+                <li><span class="icn-git"></span> git</li>
+                <li><span class="icn-apple"></span> apple</li>
+                <li><span class="icn-android"></span> android</li>
+                <li><span class="icn-windows"></span> windows</li>
+                <li><span class="icn-skype"></span> skype</li>
+                <li><span class="icn-linkedin"></span> linkedin</li>
+                <li><span class="icn-html5"></span> html5</li>
+                <li><span class="icn-css3"></span> css3</li>
+                <li><span class="icn-chrome"></span> chrome</li>
+                <li><span class="icn-firefox"></span> firefox</li>
+                <li><span class="icn-ie"></span> ie</li>
+                <li><span class="icn-edge"></span> edge</li>
+                <li><span class="icn-opera"></span> opera</li>
+                <li><span class="icn-safari"></span> safari</li>
+                <li><span class="icn-creative-cloud"></span> creative-cloud</li>
+                <li><span class="icn-dropbox"></span> dropbox</li>
+                <li><span class="icn-evernote"></span> evernote</li>
+                <li><span class="icn-paypal"></span> paypal</li>
+                <li><span class="icn-swarm"></span> swarm</li>
+                <li><span class="icn-vk"></span> vk</li>
+                <li><span class="icn-yelp"></span> yelp</li>
+                <li><span class="icn-dribbble"></span> dribbble</li>
+                <li><span class="icn-lastfm"></span> lastfm</li>
+                <li><span class="icn-pinterest"></span> pinterest</li>
+                <li><span class="icn-stumbleupon"></span> stumbleupon</li>
+                <li><span class="icn-vimeo"></span> vimeo</li>
+            </ul>
+            <br />
+            <div class="padding5 bg-grayLighter text-secondary">
+                <span class="icn-warning icon-4x place-left margin5"></span>
+                <ul style="margin-left: 50px">
+                    <li>All brand icons are trademarks of their respective owners.</li>
+                    <li>The use of these trademarks does not indicate endorsement of the trademark holder by Alacrán Icon Font, nor vice versa.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h4 id="_weather_">Weather icons</h4>
+        <div class="example">
+            <ul class="inline-list icon-listing">
+                <li><span class="icn-thermometer"></span> thermometer</li>
+                <li><span class="icn-sunrise"></span> sunrise</li>
+                <li><span class="icn-sun"></span> sun</li>
+                <li><span class="icn-moon"></span> moon</li>
+                <li><span class="icn-sun-full"></span> sun-full</li>
+                <li><span class="icn-moon_2"></span> moon_2</li>
+                                
+                <li><span class="icn-cloud"></span> cloud</li>
+                <li><span class="icn-cloud2"></span> cloud2</li>
+                <li><span class="icn-cloud3"></span> cloud3</li>
+                <li><span class="icn-cloud4"></span> cloud4</li>
+
+                <li><span class="icn-cloudy"></span> cloudy</li>
+                <li><span class="icn-cloudy2"></span> cloudy2</li>
+                <li><span class="icn-cloudy2"></span> cloudy3</li>
+                <li><span class="icn-cloudy4"></span> cloudy4</li>
+
+
+                <li><span class="icn-weather"></span> weather</li>
+                <li><span class="icn-weather2"></span> weather2</li>
+                <li><span class="icn-weather3"></span> weather3</li>
+                <li><span class="icn-weather4"></span> weather4</li>
+
+                <li><span class="icn-lines"></span> lines</li>
+                
+                <li><span class="icn-lightning"></span> lightning</li>
+                <li><span class="icn-lightning2"></span> lightning2</li>
+                <li><span class="icn-lightning3"></span> lightning3</li>
+                <li><span class="icn-lightning4"></span> lightning4</li>
+                <li><span class="icn-lightning5"></span> lightning5</li>
+
+                <li><span class="icn-wind"></span> wind</li>
+                <li><span class="icn-windy2"></span> windy</li>
+                <li><span class="icn-windy3"></span> windy2</li>
+                <li><span class="icn-windy3"></span> windy3</li>
+                <li><span class="icn-windy4"></span> windy4</li>
+
+                <li><span class="icn-snowflake"></span> showflake</li>
+                <li><span class="icn-snowy"></span> snowy</li>
+                <li><span class="icn-snowy2"></span> snowy2</li>
+                <li><span class="icn-snowy3"></span> snowy3</li>
+                <li><span class="icn-snowy4"></span> snowy4</li>
+                <li><span class="icn-snowy5"></span> snowy5</li>
+                
+                <li><span class="icn-rainy"></span> rainy</li>
+                <li><span class="icn-rainy3"></span> rainy2</li>
+                <li><span class="icn-rainy3"></span> rainy3</li>
+                <li><span class="icn-rainy3"></span> rainy4</li>
+        
+                <li><span class="icn-none"></span> none</li>
+                <li><span class="icn-cc"></span> cc</li>
+                <li><span class="icn-ff"></span> ff</li>
+            </ul>
+        </div>
+
+        <h4 id="_chart_">Chart icons</h4>
+        <div class="example">
+            <ul class="inline-list icon-listing">
+                <li><span class="icn-stats-bars"></span> stats-bars</li>
+                <li><span class="icn-stats-bars_2"></span> stats-bars_2</li>
+                <li><span class="icn-stats-dots"></span> stats-dots</li>
+                <li><span class="icn-pie-chart"></span> pie-chart</li>
+            </ul>
+        </div>
+
+        <h4 id="_spinner_">Spinner icons</h4>
+        <div class="example">
+            <ul class="inline-list icon-listing">
+                <li><span class="icn-spinner"></span> spinner</li>
+                <li><span class="icn-spinner2"></span> spinner2</li>
+                <li><span class="icn-spinner3"></span> spinner3</li>
+                <li><span class="icn-spinner4"></span> spinner4</li>
+                <li><span class="icn-spinner5"></span> spinner5</li>
+                <li><span class="icn-loop_2"></span> loop_2</li>
+            </ul>
+            <h5>Animated Spinner icons (with subclass icn-ani-spin)</h5>
+            <ul class="inline-list icon-listing">
+                <li><span class="icn-spinner icn-ani-spin"></span> spinner</li>
+                <li><span class="icn-spinner2 icn-ani-spin"></span> spinner2</li>
+                <li><span class="icn-spinner3 icn-ani-spin"></span> spinner3</li>
+                <li><span class="icn-spinner4 icn-ani-spin"></span> spinner4</li>
+                <li><span class="icn-spinner5 icn-ani-spin"></span> spinner5</li>
+                <li><span class="icn-loop_2 icn-ani-spin"></span> loop_2</li>
+            </ul>
+            <h5>Animated Spinner icons (with subclass icn-ani-pulse)</h5>
+            <ul class="inline-list icon-listing">
+                <li><span class="icn-spinner icn-ani-pulse"></span> spinner</li>
+                <li><span class="icn-spinner2 icn-ani-pulse"></span> spinner2</li>
+                <li><span class="icn-spinner3 icn-ani-pulse"></span> spinner3</li>
+                <li><span class="icn-spinner4 icn-ani-pulse"></span> spinner4</li>
+                <li><span class="icn-spinner5 icn-ani-pulse"></span> spinner5</li>
+                <li><span class="icn-loop_2 icn-ani-pulse"></span> loop_2</li>
+            </ul>
+        </div>
+
+        <h4 id="_animated_">Animated icons</h4>
+        <div class="padding10 bg-lighterBlue fg-white margin10 no-margin-right no-margin-left align-center">
+            Special thanks to <a href="https://github.com/MenesesEvandro" class="text-accent text-bold fg-white">Meneses Evandro</a> for adding this animations.
+        </div>
+        <div class="example">
+            <h5>Normal speed</h5>
+            <ul class="inline-list icon-listing">
+                <li><span class="icn-wrench icn-ani-spanner"></span> spanner</li>
+                <li><span class="icn-bell icn-ani-ring"></span> bell</li>
+                <li><span class="icn-envelop icn-ani-vertical"></span> vertical</li>
+                <li><span class="icn-blocked icn-ani-horizontal"></span> horizontal</li>
+                <li><span class="icn-warning icn-ani-flash"></span> flash</li>
+                <li><span class="icn-thumbs-up icn-ani-bounce"></span> bounce</li>
+                <li><span class="icn-paper-plane icn-ani-float"></span> float</li>
+                <li><span class="icn-heart icn-ani-heartbeat"></span> heartbeat</li>
+                <li><span class="icn-envelop icn-ani-shake"></span> shake</li>
+                <li><span class="icn-gift icn-ani-shuttle"></span> shuttle</li>
+                <li><span class="icn-truck icn-ani-pass"></span> pass</li>
+                <li><span class="icn-earth icn-ani-ripple"></span> ripple</li>
+            </ul>
+            <h5>Fast speed (with subclass icn-ani-fast)</h5>
+            <ul class="inline-list icon-listing">
+                <li><span class="icn-wrench icn-ani-spanner icn-ani-fast"></span> spanner</li>
+                <li><span class="icn-bell icn-ani-ring icn-ani-fast"></span> bell</li>
+                <li><span class="icn-envelop icn-ani-vertical icn-ani-fast"></span> vertical</li>
+                <li><span class="icn-blocked icn-ani-horizontal icn-ani-fast"></span> horizontal</li>
+                <li><span class="icn-warning icn-ani-flash icn-ani-fast"></span> flash</li>
+                <li><span class="icn-thumbs-up icn-ani-bounce icn-ani-fast"></span> bounce</li>
+                <li><span class="icn-paper-plane icn-ani-float icn-ani-fast"></span> float</li>
+                <li><span class="icn-heart icn-ani-heartbeat icn-ani-fast"></span> heartbeat</li>
+                <li><span class="icn-envelop icn-ani-shake icn-ani-fast"></span> shake</li>
+                <li><span class="icn-gift icn-ani-shuttle icn-ani-fast"></span> shuttle</li>
+                <li><span class="icn-truck icn-ani-pass icn-ani-fast"></span> pass</li>
+                <li><span class="icn-earth icn-ani-ripple icn-ani-fast"></span> ripple</li>
+            </ul>
+            <h5>Slow speed (with subclass icn-ani-slow)</h5>
+            <ul class="inline-list icon-listing">
+                <li><span class="icn-wrench icn-ani-spanner icn-ani-slow"></span> spanner</li>
+                <li><span class="icn-bell icn-ani-ring icn-ani-slow"></span> bell</li>
+                <li><span class="icn-envelop icn-ani-vertical icn-ani-slow"></span> vertical</li>
+                <li><span class="icn-blocked icn-ani-horizontal icn-ani-slow"></span> horizontal</li>
+                <li><span class="icn-warning icn-ani-flash icn-ani-slow"></span> flash</li>
+                <li><span class="icn-thumbs-up icn-ani-bounce icn-ani-slow"></span> bounce</li>
+                <li><span class="icn-paper-plane icn-ani-float icn-ani-slow"></span> float</li>
+                <li><span class="icn-heart icn-ani-heartbeat icn-ani-slow"></span> heartbeat</li>
+                <li><span class="icn-envelop icn-ani-shake icn-ani-slow"></span> shake</li>
+                <li><span class="icn-gift icn-ani-shuttle icn-ani-slow"></span> shuttle</li>
+                <li><span class="icn-truck icn-ani-pass icn-ani-slow"></span> pass</li>
+                <li><span class="icn-earth icn-ani-ripple icn-ani-slow"></span> ripple</li>
+            </ul>
+            <p>
+                To use animation only on-hover use classes with <span class="tag">icn-ani-hover-*</span>.
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

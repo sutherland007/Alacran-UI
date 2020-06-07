@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Alacrán UI, a sleek, intuitive, and powerful framework for faster and easier web development">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, alacran, front-end, frontend, web development">
+    <meta name="author" content="AJ Spektor and Alacrán UI contributors">
+
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.png' />
+    <title>Donnut chart (BETA) | Alacrán UI</title>
+
+    <link href="css/alacran.css" rel="stylesheet">
+    <link href="css/alacran-icons.css" rel="stylesheet">
+    <link href="css/alacran-responsive.css" rel="stylesheet">
+    <link href="css/alacran-schemes.css" rel="stylesheet">
+
+    <link href="css/docs.css" rel="stylesheet">
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <!--<script src="js/jquery-3.1.0.min.js"></script>-->
+    <script src="js/alacran.js"></script>
+    <script src="js/docs.js"></script>
+    <script src="js/prettify/run_prettify.js"></script>
+
+    <style>
+        .donut {
+            float: left;
+            margin-left: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container page-content">
+        <h1><a href="index.html" class="nav-button transform"><span></span></a>&nbsp;Donut chart</h1>
+
+        <div class="example">
+            <div class="clear-float">
+                <div data-role="donut" data-value="35" id="donut1"></div>
+                <div data-role="donut" data-value="75" data-animate="10" id="donut2"></div>
+            </div>
+            <br />
+
+            <button class="button primary" onclick="genNewDonutValue()">New Value</button>
+            <button class="button success" onclick="runDonut()">Run</button>
+
+            <script>
+                function genNewDonutValue(){
+                    var donut_value = metroUtils.random(0,100);
+
+                    $('#donut1').data('donut').val(donut_value);
+                    $('#donut2').data('donut').val(donut_value);
+                }
+
+                function runDonut(){
+                    var donut = $('#donut1').data('donut');
+                    var i = 0;
+                    var interval;
+
+                    interval = setInterval(function(){
+                        donut.val(++i);
+                        if (i == 100) {
+                            clearInterval(interval);
+                        }
+                    }, 10)
+                }
+            </script>
+        </div>
+    </div>
+
+</body>
+</html>
