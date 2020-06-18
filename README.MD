@@ -5,6 +5,10 @@ A front end css framework forked on Metro UI CSS V3.
 
 The live version [is here](http://hyperyaentertainment.rf.gd/alacran/), thanks to [Hyperya Entertainment](https://www.facebook.com/HyperyaEntertainment/) for giving hosting for this project.
 
+The rails app (still in development) [is here](https://alacran-ui.herokuapp.com/)
+the rails app will implement and show all the components of this framework so you can
+see them in action and how the perform in a real webapp.
+
 ## Is this complete?
 No, I started this project on 2017 but stopped the development due to health reasons, but now I started again. And we are in the build 9052020
 

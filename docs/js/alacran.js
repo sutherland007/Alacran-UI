@@ -11404,6 +11404,8 @@ $(document).ready(function(){
     });*/
 
     $(document).on('click','#homeDarkMode', function () { 
+        $("#homeDarkMode-icn").toggleClass("icn-eye_blind");
+        $("#homeDarkMode-icn").toggleClass("icn-eye");
         toggleDarkMode();
     });
 
@@ -11420,8 +11422,6 @@ $(document).ready(function(){
         var donut_backs = $(all_donuts).andSelf().find(".donut-back");
         var donut_titles = $(all_donuts).andSelf().find(".donut-title");
 
-        $("#homeDarkMode-icn").toggleClass("icn-eye_blind");
-        $("#homeDarkMode-icn").toggleClass("icn-eye");
         $(elementsStr).toggleClass("dark-mode");
         $("h1, h2, h3, h4, ol, li, .prettyprint").toggleClass("dark-mode-text");
         $(buttonsStr).toggleClass("dark-btn");
